@@ -12,9 +12,13 @@ Consultations 📅: Personalized sessions to help travelers plan their trips.
 Exclusive Content 🎥: Special videos and materials for followers.
 
 🛠️ Tech Stack
+
 Django + Python 🐍 (Backend)
+
 HTML, CSS, and JavaScript 🌐 (Frontend)
+
 PostgreSQL/MySQL Database 🗄️
+
 Hosting on [chosen platform] ☁️
 
 🚀 Status
