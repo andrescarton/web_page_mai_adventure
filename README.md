@@ -1,5 +1,7 @@
 # 🌍 Travel Website | Maive
-Welcome to Maive’s official travel website! This platform is dedicated to sharing travel experiences, itineraries, tips, and exclusive content about destinations around the world.
+Welcome to Maive’s official travel website! 
+
+This platform is dedicated to sharing travel experiences, itineraries, tips, and exclusive content about destinations around the world.
 
 ✨ Features
 
