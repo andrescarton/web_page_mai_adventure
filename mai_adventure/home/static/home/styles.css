@@ -1,0 +1,255 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f2;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    height: 50px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 120px
+}
+
+.logo-image {
+    position: absolute;  /* A imagem vai se posicionar em relação ao header */
+    top: -85px;  /* Ajuste a posição para cima do header */
+    margin-left: -160px; /* Mova a imagem para a esquerda */
+    width: 180px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    z-index: 10;
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF6500; /* Laranja */
+}
+
+header .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .actions input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header .actions .login {
+    padding: 0.5rem 1rem;
+    background-color: #FF6500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .actions .login:hover {
+    background-color: #e05500;
+}
+
+.instagram-icon {
+    width: 55px; /* Largura inicial */
+    height: 55px; /* Altura inicial */
+    cursor: pointer; /* Aponta que é clicável */
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out; /* Transições suaves */
+    margin-left: 0.5rem; /* Espaçamento ao lado do botão */
+}
+
+.instagram-icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 50% */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-size: 900px 600px; /* Faz a imagem cobrir toda a seção */
+    background-position: top right; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    position: relative; /* Permite que elementos internos fiquem acima do fundo */
+    height: 600px; /* Altura da seção */
+    overflow: hidden;
+}
+
+.hero .text-content {
+    flex: 1;
+    padding-left: 8rem; /* Mover o texto e botão mais para a direita */
+    padding-right: 2rem;
+    z-index: 2;
+    
+}
+
+.hero .text-content h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    font-family:Arial Black ;
+}
+
+.hero .text-content h1 span {
+    color: #FF6500; /* Destaque em laranja */
+}
+
+.hero .text-content p {
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.hero .text-content .cta {
+    padding: 0.8rem 2rem;
+    background-color: #FF6500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 4rem; /* Adicione esta linha para mover o botão para a direita */
+}
+
+.hero .text-content .cta:hover {
+    background-color: #e05500;
+}
+
+/* Hero Images */
+.hero .images {
+    position: relative; /* Contêiner das imagens */
+    width: 50%; /* Garante que o contêiner ocupe toda a largura disponível */
+    height: 580px; /* Defina uma altura para o contêiner das imagens */
+    display: flex;
+    justify-content: center; /* Alinha as imagens centralizadas horizontalmente */
+    align-items: center; /* Alinha as imagens centralizadas verticalmente */
+    overflow: hidden; /* Garante que qualquer parte da imagem fora do contêiner não será visível */
+}
+
+/* Imagens */
+.hero .images img {
+    position: absolute; /* Permite mover as imagens dentro do contêiner */
+    width: 275px; /* Limita a largura das imagens */
+    height: auto; /* Mantém a proporção da altura conforme a largura */
+    max-width: 100%; /* Garante que as imagens não ultrapassem o limite da largura da seção */
+    border-radius: 10px; /* Borda arredondada nas imagens */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil nas imagens */
+}
+
+/* Movendo a primeira imagem */
+.hero .images img:nth-child(1) {
+    top: 10; /* Alinha a primeira imagem no topo */
+    left: 5%; /* Coloca a primeira imagem a 10% da largura do contêiner */
+}
+
+/* Movendo a segunda imagem */
+.hero .images img:nth-child(2) {
+    top: 20px; /* Distância do topo para a segunda imagem */
+    left: 50%; /* Coloca a segunda imagem a 35% da largura do contêiner */
+}
+
+/* Movendo a terceira imagem */
+.hero .images img:nth-child(3) {
+    top: 390px; /* Distância do topo para a terceira imagem */
+    left: 50%; /* Coloca a terceira imagem a 60% da largura do contêiner */
+}
+
+.icon-aviao {
+    position: absolute;
+    width: 22vw; /* Ajuste o tamanho do avião */
+    max-width: 500px;
+    height: auto;
+    top: 68vh; /* Ajuste a altura (mais para cima ou para baixo) */
+    left: 30vw; /* Ajuste para mover mais para a direita */
+    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+}
+
+.icon-aviao2 {
+    position: absolute;
+    width: 22vw; /* Ajuste o tamanho do avião */
+    max-width: 90px;
+    height: auto;
+    top: 3vh; /* Ajuste a altura (mais para cima ou para baixo) */
+    left: 67vw; /* Ajuste para mover mais para a direita */
+    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+}
+
+.sello {
+    position: absolute;
+    width: 100vw; /* Ajuste o tamanho do avião */
+    max-width: 120px;
+    height: auto;
+    top: 45vh; /* Ajuste a altura (mais para cima ou para baixo) */
+    left: 72vw; /* Ajuste para mover mais para a direita */
+    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+}
+
+.sello2 {
+    position: absolute;
+    width: 100vw; /* Ajuste o tamanho do avião */
+    max-width: 120px;
+    height: auto;
+    top: 1vh; /* Ajuste a altura (mais para cima ou para baixo) */
+    left: 86vw; /* Ajuste para mover mais para a direita */
+    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+}
+
+/* Menu para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}

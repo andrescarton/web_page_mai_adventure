@@ -1,0 +1,166 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f5f2;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    height: 50px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 120px
+}
+
+.logo-image {
+    position: absolute;  /* A imagem vai se posicionar em relação ao header */
+    top: -85px;  /* Ajuste a posição para cima do header */
+    margin-left: -160px; /* Mova a imagem para a esquerda */
+    width: 180px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+    z-index: 10;
+    
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF6500; /* Laranja */
+}
+
+header .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .actions input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header .actions .login {
+    padding: 0.5rem 1rem;
+    background-color: #FF6500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+header .actions .login:hover {
+    background-color: #e05500;
+}
+
+.instagram-icon {
+    width: 55px; /* Largura inicial */
+    height: 55px; /* Altura inicial */
+    cursor: pointer; /* Aponta que é clicável */
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out; /* Transições suaves */
+    margin-left: 0.5rem; /* Espaçamento ao lado do botão */
+}
+
+.instagram-icon:hover {
+    transform: scale(1.2); /* Aumenta o tamanho em 50% */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-image: url("{% static 'home/images/mapa.png' %}");; /* Imagem do mapa */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Permite o posicionamento de elementos sobre o fundo */
+    z-index: 1; /* Garante que o fundo não sobreponha os conteúdos */
+    
+}
+
+.hero .text-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero .text-content h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.hero .text-content h1 span {
+    color: #FF6500; /* Destaque em laranja */
+}
+
+.hero .text-content p {
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero .text-content .cta {
+    padding: 0.8rem 2rem;
+    background-color: #FF6500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 10rem; /* Adicione esta linha para mover o botão para a direita */
+}
+
+.hero .text-content .cta:hover {
+    background-color: #e05500;
+}
+
+/* Hero Images */
+.hero .images {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+
+.hero .images img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
