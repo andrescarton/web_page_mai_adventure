@@ -18,7 +18,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
+    padding: 1rem ;
+    padding-left: 8%; /* Mover o texto e botão mais para a direita */
+    padding-right: 8%;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-top: 50px;
@@ -31,16 +33,14 @@ header .logo {
     position: relative;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-left: 120px
+    margin-left: -7%;
+   
 }
 
 .logo-image {
     position: relative;  /* A imagem vai se posicionar em relação ao header */
-
     width: 180px; /* Ajuste o tamanho do logo conforme necessário */
-    transform: translateX(0%); /* Ajusta o posicionamento */
-    height: auto;
-    z-index: 10;
+    margin-top: -5%;
     
 }
 
@@ -92,7 +92,6 @@ header .actions .login:hover {
     height: 55px; /* Altura inicial */
     cursor: pointer; /* Aponta que é clicável */
     transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out; /* Transições suaves */
-    margin-left: 0.5rem; /* Espaçamento ao lado do botão */
 }
 
 .instagram-icon:hover {
@@ -146,7 +145,7 @@ header .actions .login:hover {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
-    margin-left: 4rem; /* Adicione esta linha para mover o botão para a direita */
+    margin-left: 25%; /* Adicione esta linha para mover o botão para a direita */
 }
 
 .hero .text-content .cta:hover {
@@ -195,12 +194,11 @@ header .actions .login:hover {
 
 .icon-aviao {
     position: absolute;
-    width: 22vw; /* Ajuste o tamanho do avião */
-    max-width: 500px;
-    height: auto;
-    top: 68vh; /* Ajuste a altura (mais para cima ou para baixo) */
-    left: 30vw; /* Ajuste para mover mais para a direita */
-    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+    width: 350px; /* Ajuste o tamanho do avião */
+    top:85%;
+    left: 32%; /* Ajuste para mover mais para a direita */
+    transform: translate(-50%, -50%);
+    transform: rotate(2deg); /* Inclina o avião se quiser um efeito dinâmico */
 }
 
 .icon-aviao2 {
