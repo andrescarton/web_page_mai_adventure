@@ -330,3 +330,55 @@ header .actions .login:hover {
     }
 }
 
+/*parte 2*/
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.carousel button {
+    font-size: 2rem;
+    color: #f97316;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.carousel .images {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 16px;
+}
+.carousel .images .image-container {
+    flex: none;
+    width: 200px;
+    height: 300px;
+    margin: 0 8px;
+    text-align: center;
+    overflow: hidden;
+}
+.carousel .images .image-container img {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
+    object-position: center center; /* Ajusta la posición del recorte */
+}
+.carousel .images .image-container p {
+    margin-top: 8px;
+}
+.explore-button {
+    margin-top: 16px;
+}
+.explore-button button {
+    padding: 0.8rem 2rem;
+    background-color: #FF6500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 25%;
+}
