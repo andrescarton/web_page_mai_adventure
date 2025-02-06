@@ -18,7 +18,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem ;
     padding-left: 8%; /* Mover o texto e botão mais para a direita */
     padding-right: 8%;
     background-color: #fff;
@@ -206,8 +205,8 @@ header .actions .login:hover {
     width: 22vw; /* Ajuste o tamanho do avião */
     max-width: 90px;
     height: auto;
-    top: 3vh; /* Ajuste a altura (mais para cima ou para baixo) */
-    left: 67vw; /* Ajuste para mover mais para a direita */
+    top: 4%; /* Ajuste a altura (mais para cima ou para baixo) */
+    left: 66%; /* Ajuste para mover mais para a direita */
     transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
 }
 
@@ -331,12 +330,47 @@ header .actions .login:hover {
 }
 
 /*parte 2*/
+/*Header*/
+.section2 {
+    width: 100%;
+    text-align: right;
+    padding: 8% 8% 0 0;
+}
+.section2 .destino {
+    display: inline-block;
+    text-align: right;
+}
+.section2 .destino h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+}
 
+.section2 nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    background-color: #d3d3d3; /* Specific background color */
+    
+}
+.section2 nav ul li {
+    margin: 0 16px;
+}
+.section2 nav ul li a {
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: black;
+}
+/*Carousel*/
 .carousel {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 16px;
+    padding-right: 4%;
+    padding-left: 4%;
 }
 .carousel button {
     font-size: 2rem;
@@ -344,11 +378,20 @@ header .actions .login:hover {
     background: none;
     border: none;
     cursor: pointer;
+    padding: 0 16px;
+
+}
+.carousel button.left::before {
+    content: '◀';
+}
+.carousel button.right::before {
+    content: '▶';
 }
 .carousel .images {
     display: flex;
-    overflow-x: auto;
+    overflow-x: hidden;
     padding: 0 16px;
+    scroll-behavior: smooth;
 }
 .carousel .images .image-container {
     flex: none;
@@ -380,5 +423,9 @@ header .actions .login:hover {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s;
-    margin-left: 25%;
+    margin-left: 45%;
+}
+
+.explore-button button:hover {
+    background-color: #e05500;
 }
