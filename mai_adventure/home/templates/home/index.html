@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"> </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
     <title>Mai Adventure</title>
     <link rel="stylesheet" type="text/css" href="{% static 'home/styles.css' %}">
 </head>
@@ -19,19 +22,40 @@
                 <li><a href="#">GUÍAS</a></li>
                 <li><a href="#">DESCUENTOS</a></li>
             </ul>
-            <div class="menu-icon" onclick="toggleMenu()">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
         </nav>
         <div class="actions">
             <input type="text" placeholder="Search">
             <button class="login">LOG IN</button>
             <img src="{% static 'home/images/instagram.png' %}" alt="Instagram" class="instagram-icon">
-        </div>     
+        </div>  
+        <!-- Menu Sanduíche (exibido no mobile) -->
+        <button class="bg-[#FF6500] text-white px-4 py-2 rounded-full lg:hidden" id="menu-button">
+            <i class="fas fa-bars" id="menu-icon"></i>
+        </button> 
     </header>
-
+    <!-- Menu do celular (escondido por padrão) -->
+    <nav class="menu-hidden bg-gray-100 p-4 absolute top-0 left-0 right-0 mx-4 mt-16 rounded-lg shadow-lg lg:hidden" id="menu">
+        <ul class="space-y-4 text-right">
+            <li>
+                <a class="text-lg font-semibold" href="#">Destinos</a>
+            </li>
+            <li>
+                <a class="text-lg font-semibold" href="#">Mapas Interactivos</a>
+            </li>
+            <li>
+                <a class="text-lg font-semibold" href="#">Guias</a>
+            </li>
+            <li>
+                <a class="text-lg font-semibold" href="#">Descuentos</a>
+            </li>
+            <li>
+                <button class="bg-[#FF6500] text-white px-4 py-2 rounded" style="border: none;">Login</button>
+            </li>
+            <li class="flex justify-end">
+                <img alt="Imagem do Instagram" class="rounded-full" height="100" src="{% static 'home/images/instagram.png' %}" width="60"/>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section class="hero" style="background-image: url('{% static "home/images/mapa.png" %}');">
             <div class="text-content">

@@ -42,6 +42,9 @@ header .logo {
     margin-top: -5%;
     
 }
+.navbar {
+    display: flex;
+  }
 
 header nav ul {
     display: flex;
@@ -230,61 +233,44 @@ header .actions .login:hover {
     transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
 }
 
+.menu-hidden {
+    display: none;
+}
+.menu-visible {
+    display: block;
+    animation: slide-down 0.3s ease-out;
+}
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 /* Responsividade */
 @media (max-width: 768px) {
     header {
         margin-top: 5px;
-        height: 10%;
+        height: auto; /* Ajusta a altura para o mobile */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo-image {
-        top: -250%;
-        left: -80%;
-        transform: translateX(-0%);
-        width: 150px;
+        width: 120px; /* Ajusta o tamanho do logo para o mobile */
     }
 
-    .menu-icon {
-        display: flex;
-    }
-    
-    .actions input {
-        display: none; /* Esconde a barra de pesquisa */
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: -25px;
-        right: 0;
-        background-color: #fff;
-        width: 100%;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        padding: 1rem;
-        z-index: 1000;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        margin: 0.5rem 0;
+    .navbar {
+        display: none; /* Esconde o menu de navegação no mobile */
     }
 
     header .actions {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    header .actions input {
-        width: 100%;
-    }
-
-    header .actions .login {
-        width: 100%;
+        display: none ; /* Esconde a seção de ações no mobile */
     }
 
     .hero {
@@ -300,7 +286,7 @@ header .actions .login:hover {
     }
 
     .hero .text-content h1 {
-        font-size: 2rem;
+        font-size: 1.8rem; /* Ajusta o tamanho da fonte para telas pequenas */
     }
 
     .hero .text-content p {
@@ -325,10 +311,9 @@ header .actions .login:hover {
     }
 
     .icon-aviao, .icon-aviao2, .sello, .sello2 {
-        display: none;
+        display: none; /* Esconde os ícones e selos no mobile */
     }
 }
-
 /*parte 2*/
 /*Header*/
 .section2 {
