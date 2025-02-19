@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
 }
 
 /* Estilo geral */
@@ -10,6 +11,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f5f2;
     color: #333;
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Cabeçalho */
@@ -18,11 +24,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 8%; /* Mover o texto e botão mais para a direita */
+    padding-left: 9%; /* Mover o texto e botão mais para a direita */
     padding-right: 8%;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    margin-top: 1.5%;
     height: 50px;
 }
 
@@ -30,26 +36,28 @@ header .logo {
     display: flex;
     align-items: center;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    margin-left: -7%;
+    margin-left: -5%;
    
 }
 
 .logo-image {
     position: relative;  /* A imagem vai se posicionar em relação ao header */
-    width: 180px; /* Ajuste o tamanho do logo conforme necessário */
-    margin-top: -5%;
+    width: 60px; /* Ajuste o tamanho do logo conforme necessário */
+    margin-top: 2%;
     
 }
 .navbar {
     display: flex;
+    list-style: none;
+    gap: 1.5rem;
   }
 
 header nav ul {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 header nav ul li a {
@@ -112,6 +120,7 @@ header .actions .login:hover {
     height: 600px; /* Altura da seção */
     overflow: hidden;
     padding: 3%;
+    margin-top: 1.5%;
 }
 
 .hero .text-content {
@@ -148,6 +157,10 @@ header .actions .login:hover {
     cursor: pointer;
     transition: background 0.3s;
     margin-left: 25%; /* Adicione esta linha para mover o botão para a direita */
+}
+
+.hero .cta1 {
+    display: none; /* Esconde o botão em telas maiores */
 }
 
 .hero .text-content .cta:hover {
@@ -240,6 +253,7 @@ header .actions .login:hover {
     display: block;
     animation: slide-down 0.3s ease-out;
 }
+
 @keyframes slide-down {
     from {
         transform: translateY(-100%);
@@ -250,72 +264,6 @@ header .actions .login:hover {
         opacity: 1;
     }
 }
-/* Responsividade */
-@media (max-width: 768px) {
-    header {
-        margin-top: 5px;
-        height: auto; /* Ajusta a altura para o mobile */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo-image {
-        width: 120px; /* Ajusta o tamanho do logo para o mobile */
-    }
-
-    .navbar {
-        display: none; /* Esconde o menu de navegação no mobile */
-    }
-
-    header .actions {
-        display: none ; /* Esconde a seção de ações no mobile */
-    }
-
-    .hero {
-        flex-direction: column;
-        padding: 1rem;
-        height: auto;
-        text-align: center;
-    }
-
-    .hero .text-content {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .hero .text-content h1 {
-        font-size: 1.8rem; /* Ajusta o tamanho da fonte para telas pequenas */
-    }
-
-    .hero .text-content p {
-        font-size: 1rem;
-    }
-
-    .hero .text-content .cta {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    .hero .images {
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    .hero .images img {
-        position: static;
-        width: 80%;
-        margin-bottom: 1rem;
-    }
-
-    .icon-aviao, .icon-aviao2, .sello, .sello2 {
-        display: none; /* Esconde os ícones e selos no mobile */
-    }
-}
-/*parte 2*/
-/*Header*/
 .section2 {
     width: 100%;
     text-align: right;
@@ -437,6 +385,7 @@ header .actions .login:hover {
 /*botao explore*/
 .explore-button {
     margin-top: 16px;
+    
 }
 .explore-button button {
     padding: 0.8rem 2rem;
@@ -452,4 +401,166 @@ header .actions .login:hover {
 
 .explore-button button:hover {
     background-color: #e05500;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        height: auto; /* Ajusta a altura para o mobile */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 1.3rem;
+        font-weight: bold;
+        width: 100%; /* Garante que o logo ocupe toda a largura do header */
+        text-align: left; /* Alinha o logo no centro horizontalmente */
+    }
+
+    .logo-image {
+        width: 60px; /* Ajusta o tamanho do logo para o mobile */
+    }
+
+    .navbar {
+        display: none; /* Esconde o menu de navegação no mobile */
+    }
+
+    header .actions {
+        display: none; /* Esconde a seção de ações no mobile */
+    }
+
+    .hero .text-content .cta {
+        display: none; /* Esconde o botão em telas maiores */
+    }
+
+    .hero {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        padding: 1rem;
+        height: auto;
+        text-align: center;
+        background-image: none !important;
+        margin-top: 2%;
+    }
+
+    .hero .text-content {
+        text-align: left; /* Alinha o texto à esquerda */
+        padding-left: 1rem; /* Ajusta a distância da borda esquerda */
+        padding-right: 1rem;
+        width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+    }
+
+    .hero .text-content h1 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+
+    .hero .text-content p {
+        font-size: 1rem;
+    }
+
+    .hero .images {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin-top: 0rem;
+    }
+
+    .hero .images img {
+        position: absolute;
+        width: 45%;
+        margin-bottom: 10rem;
+    }
+
+    /* Posicionamento das imagens no mobile */
+    .hero .images img:nth-child(1) {
+        top: 0%;
+        left: 0%;
+        width:50%;
+        height:100%;
+        max-height: 300px; 
+    }
+
+    .hero .images img:nth-child(2) {
+        top: 0%;
+        left: 75%;
+        width:45%;
+        height:60%;
+        transform: translateX(-50%);
+    }
+
+    .hero .images img:nth-child(3) {
+        top: 65%;
+        left: 75%;
+        width:45%;
+        height:35%;
+        transform: translateX(-50%);
+    }
+    .hero .cta1 {
+        padding: 0.8rem 2rem;
+        background-color: #FF6500;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-left: 25%; /* Adicione esta linha para mover o botão para a direita */
+    }
+    .hero .cta1 {
+        display: block; /* Faz com que o botão se comporte como um bloco */
+        width: 70%; /* Define a largura do botão */
+        margin: 1rem auto; /* Centraliza o botão e adiciona espaço em cima e embaixo */
+    }
+
+
+    .icon-aviao, .icon-aviao2{
+        display: none;
+    }
+    
+    .sello {
+        position: absolute;
+        width: 60vw; /* Ajuste o tamanho do avião */
+        max-width: 60px;
+        height: auto;
+        top: 69%; /* Ajuste a altura (mais para cima ou para baixo) */
+        left: 50vw; /* Ajuste para mover mais para a direita */
+        transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+    }
+    
+    .sello2 {
+        position: absolute;
+        width: 60vw; /* Ajuste o tamanho do avião */
+        max-width: 60px;
+        height: auto;
+        top: 47%; /* Ajuste a altura (mais para cima ou para baixo) */
+        left: 84vw; /* Ajuste para mover mais para a direita */
+        transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+    }
+
+    .section2 .destino h1 {
+        font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
+    }
+
+    .explore-button {
+        position: relative;
+        left: 50%;
+        bottom: 20px; /* Ajuste conforme necessário */
+        transform: translate(-70%, 50%); /* Move o centro do botão para o centro da tela */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .explore-button button {
+        width: 70%;
+        max-width: 200px;
+        text-align: center;
+    }
 }
