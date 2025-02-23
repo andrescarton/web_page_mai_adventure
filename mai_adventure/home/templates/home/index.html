@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="{% static 'home/images/logo_test.png' %}" alt="Logo" class="logo-image">
+            <img src="{% static 'home/images/Pagina_inicial/logo_test.png' %}" alt="Logo" class="logo-image">
             MAI.ADVENTURE</div>
         <nav class="navbar">
             <ul class="nav-links">
@@ -26,10 +26,10 @@
         <div class="actions">
             <input type="text" placeholder="Search">
             <button class="login">LOG IN</button>
-            <img src="{% static 'home/images/instagram.png' %}" alt="Instagram" class="instagram-icon">
+            <img src="{% static 'home/images/Pagina_inicial/instagram.png' %}" alt="Instagram" class="instagram-icon">
         </div>  
         <!-- Menu Sanduíche (exibido no mobile) -->
-        <button class="bg-[#FF6500] text-white px-2.5 py-1.5 rounded-sm lg:hidden" id="menu-button">
+        <button class="bg-[#e49368] text-white px-2.5 py-1.5 rounded-sm lg:hidden" id="menu-button">
             <i class="fas fa-bars" id="menu-icon"></i>
         </button> 
     </header>
@@ -49,10 +49,10 @@
                 <a class="text-lg font-semibold" href="#">Descuentos</a>
             </li>
             <li>
-                <button class="bg-[#FF6500] text-white px-4 py-2 rounded" style="border: none;">Log in</button>
+                <button class="bg-[#e49368] text-white px-4 py-2 rounded" style="border: none;">Log in</button>
             </li>
             <li class="flex justify-end">
-                <img alt="Imagem do Instagram" class="rounded-full" height="100" src="{% static 'home/images/instagram.png' %}" width="60"/>
+                <img alt="Imagem do Instagram" class="rounded-full" height="100" src="{% static 'home/images/Pagina_inicial/instagram.png' %}" width="60"/>
             </li>
         </ul>
     </nav>
@@ -67,18 +67,19 @@
                 </p>
                 <button class="cta">JOIN THE ADVENTURE</button>
             </div>
-            <img src="{% static 'home/images/avioncito.png' %}" alt="Ícone de avião" class="icon-aviao">
+            <img src="{% static 'home/images/Pagina_inicial/avioncito.png' %}" alt="Ícone de avião" class="icon-aviao">
             <div class="images">
-                <img src="{% static 'home/images/imagen1home.png' %}"  alt="Paisaje 1">
-                <img src="{% static 'home/images/imagen2home.png' %}"  alt="Paisaje 2">
-                <img src="{% static 'home/images/imagen3home.png' %}"  alt="Paisaje 3">  
+                <img src="{% static 'home/images/Pagina_inicial/imagen1home.png' %}"  alt="Paisaje 1">
+                <img src="{% static 'home/images/Pagina_inicial/imagen2home.png' %}"  alt="Paisaje 2">
+                <img src="{% static 'home/images/Pagina_inicial/imagen3home.png' %}"  alt="Paisaje 3">  
             </div>
             <button class="cta1">JOIN THE ADVENTURE</button>
-            <img src="{% static 'home/images/avioncito2.png' %}"  alt="icon-aviao2" class="icon-aviao2">
-            <img src="{% static 'home/images/sello.png' %}"  alt="sello" class="sello">
-            <img src="{% static 'home/images/sello2.png' %}"  alt="sello2" class="sello2"> 
+            <img src="{% static 'home/images/Pagina_inicial/avioncito2.png' %}"  alt="icon-aviao2" class="icon-aviao2">
+            <img src="{% static 'home/images/Pagina_inicial/sello.png' %}"  alt="sello" class="sello">
+            <img src="{% static 'home/images/Pagina_inicial/sello2.png' %}"  alt="sello2" class="sello2"> 
         </section>
     </main>
+    <!-- Parte: destino/carousel -->
         <section class="section2" >
             <div class="destino">
                 <h1>DESTINOS </h1>
@@ -155,6 +156,32 @@
     <div class="explore-button">
         <button>EXPLORÁ</button>
     </div>
+    <!-- parte: ebook -->
+    <div class="ebook">
+        <div class="ebook-image-container">
+         <img alt="ebook'" class="ebook-image" src="{% static 'home/images/Pagina_inicial/guiadeirlanda.png' %}" />
+        </div>
+        <div class="ebook-text-container">
+            <h1 class="ebook-title">
+                <span class="larger-text">¿VIAJAS A</span>  
+                <span class="larger-irlanda">IRLANDA</span>
+                <span class="larger-text">?</span>
+            </h1>
+            <div class="ebook-image-container">
+                <img alt="ebook" class="ebook-image2" src="{% static 'home/images/Pagina_inicial/guiadeirlanda.png' %}" />
+               </div>    
+         <p class="ebook-text">
+          Mi guía es todo lo que necesitas para disfrutar de este increíble destino, ya sea que vengas de turista o te quedes a vivir. Incluye información detallada sobre los trámites y documentación, los mejores lugares para visitar, secretos bien guardados, y consejos prácticos para que tu experiencia sea única.
+         </p>
+         <p class="ebook-text">
+          Además, te doy recomendaciones locales y todo lo que no te cuentan en las guías turísticas tradicionales. ¡Todo lo que necesitas para aprovechar al máximo tu tiempo en Irlanda está aquí!
+         </p>
+         <button class="ebook-button">
+          EMPEZÁ TU VIAJE
+         </button>
+        </div>
+       </div>
+
     <script src="{% static 'home/script.js' %}"></script>
 </body>
 </html>

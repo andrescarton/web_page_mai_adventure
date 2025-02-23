@@ -85,7 +85,7 @@ header .actions input {
 
 header .actions .login {
     padding: 0.5rem 1rem;
-    background-color: #FF6500;
+    background-color: #e49368;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -94,7 +94,7 @@ header .actions .login {
 }
 
 header .actions .login:hover {
-    background-color: #e05500;
+    background-color: #d17f4c;
 }
 
 .instagram-icon {
@@ -139,7 +139,7 @@ header .actions .login:hover {
 }
 
 .hero .text-content h1 span {
-    color: #FF6500; /* Destaque em laranja */
+    color: #e49368; /* Destaque em laranja */
 }
 
 .hero .text-content p {
@@ -149,7 +149,7 @@ header .actions .login:hover {
 
 .hero .text-content .cta {
     padding: 0.8rem 2rem;
-    background-color: #FF6500;
+    background-color: #e49368;
     color: white;
     border: none;
     border-radius: 5px;
@@ -164,7 +164,7 @@ header .actions .login:hover {
 }
 
 .hero .text-content .cta:hover {
-    background-color: #e05500;
+    background-color: #d17f4c;
 }
 
 /* Hero Images */
@@ -301,7 +301,7 @@ header .actions .login:hover {
 }
 
 .section2 nav ul li a:hover {
-    color: #FF6500; /* Laranja */
+    color: #d17f4c; /* Laranja */
 }
 
 /*Carousel*/
@@ -315,7 +315,7 @@ header .actions .login:hover {
 }
 .carousel button {
     font-size: 2rem;
-    color: #f97316;
+    color: #e49368;
     background: none;
     border: none;
     cursor: pointer;
@@ -389,7 +389,7 @@ header .actions .login:hover {
 }
 .explore-button button {
     padding: 0.8rem 2rem;
-    background-color: #FF6500;
+    background-color: #e49368;
     color: white;
     border: none;
     border-radius: 5px;
@@ -400,10 +400,92 @@ header .actions .login:hover {
 }
 
 .explore-button button:hover {
-    background-color: #e05500;
+    background-color: #d17f4c;
 }
 
-/* Responsividade */
+/*parte ebook*/
+
+/* Parte ebook */
+
+       /* Parte ebook */
+       .ebook {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 0%;
+        padding-right: 2%;
+
+    }
+
+    .ebook-title {
+        font-family: 'Arial Black', sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .larger-text {
+        font-size: 45px;
+        font-family: 'Arial Black', sans-serif;
+        font-weight: bold;
+    }
+
+    .larger-irlanda {
+        font-size: 55px;
+        font-family: 'Arial Black', sans-serif;
+        font-weight: bold;
+        color: #e49368;
+    }
+
+    .ebook-image-container {
+        flex-shrink: 0;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ebook-image {
+        width: 300px;
+    }
+
+    .ebook-text-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+    }
+
+    .ebook-text {
+        margin: 10px 0;
+    }
+
+    .ebook-button {
+        padding: 12px 24px;
+        background-color: #8a9a5b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+        margin-top: 20px;
+    }
+
+    .ebook-button:hover {
+        background-color: #7a8a4b;
+    }
+
+    /* Exibe a imagem .ebook-image2 apenas em dispositivos móveis */
+    .ebook-image2 {
+        display: none;
+    }
+
+
+/* Responsividade celular */
 @media (max-width: 768px) {
     header {
         height: auto; /* Ajusta a altura para o mobile */
@@ -460,6 +542,10 @@ header .actions .login:hover {
         font-size: 2rem; /* Ajusta o tamanho da fonte para telas pequenas */
     }
 
+    .hero .text-content span {
+        font-size: 2.5rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    }
+
     .hero .text-content p {
         font-size: 1rem;
     }
@@ -503,7 +589,7 @@ header .actions .login:hover {
     }
     .hero .cta1 {
         padding: 0.8rem 2rem;
-        background-color: #FF6500;
+        background-color: #e49368;
         color: white;
         border: none;
         border-radius: 5px;
@@ -563,4 +649,30 @@ header .actions .login:hover {
         max-width: 200px;
         text-align: center;
     }
+    .ebook-image{
+        display: none;
+    }
+    .ebook-image2{
+        display: block;
+        width: 70%;
+    }
+
+    .larger-text {
+        font-size: 1.5rem; /* Ajuste o tamanho conforme necessário */
+        font-family: 'Arial Black', sans-serif; /* Define a fonte como Arial Black */
+        font-weight: bold; /* Deixa o texto em negrito */
+        }
+
+    .larger-irlanda {
+        font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+        font-family: 'Arial Black', sans-serif; /* Define a fonte como Arial Black */
+        font-weight: bold; /* Deixa o texto em negrito */
+        } 
+        
+        .ebook {
+            padding-left: 0%;
+            padding-right: 8%;
+    
+        }
+
 }
