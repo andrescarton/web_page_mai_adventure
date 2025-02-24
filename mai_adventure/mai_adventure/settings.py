@@ -120,13 +120,16 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Diretórios onde o Django deve buscar arquivos estáticos durante o desenvolvimento
-STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Diretório estático global (fora dos apps)
-    BASE_DIR / "home" / "static",  # Diretório estático específico do app 'home'
-]
+#STATICFILES_DIRS = [
+#    BASE_DIR / "static",  # Diretório estático global (fora dos apps)
+#    BASE_DIR / "home" / "static",  # Diretório estático específico do app 'home'
+#]
 
 # Diretório onde os arquivos serão armazenados após rodar 'collectstatic' (para produção)
-STATIC_ROOT = BASE_DIR / "staticfiles"
+#STATIC_ROOT = BASE_DIR / "staticfiles"
+STATIC_ROOT = "/home/andrekim47/web_page_mai_adventure/mai_adventure/staticfiles"
+
+
 
 
 # Default primary key field type
