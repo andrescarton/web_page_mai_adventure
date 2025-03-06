@@ -131,7 +131,6 @@ STATIC_ROOT = "/home/andrekim47/web_page_mai_adventure/mai_adventure/staticfiles
 
 
 
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 

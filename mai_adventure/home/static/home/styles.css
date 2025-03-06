@@ -113,7 +113,7 @@ header .actions .login:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-size: 900px 600px; /* Faz a imagem cobrir toda a seção */
+    background-size: 55% 100%; /* Faz a imagem cobrir toda a seção */
     background-position: top right; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     position: relative; /* Permite que elementos internos fiquem acima do fundo */
@@ -182,7 +182,7 @@ header .actions .login:hover {
 /* Imagens */
 .hero .images img {
     position: absolute; /* Permite mover as imagens dentro do contêiner */
-    width: 275px; /* Limita a largura das imagens */
+    width: 41%; /* Limita a largura das imagens */
     height: auto; /* Mantém a proporção da altura conforme a largura */
     max-width: 100%; /* Garante que as imagens não ultrapassem o limite da largura da seção */
     border-radius: 10px; /* Borda arredondada nas imagens */
@@ -191,60 +191,70 @@ header .actions .login:hover {
 
 /* Movendo a primeira imagem */
 .hero .images img:nth-child(1) {
-    top: 10; /* Alinha a primeira imagem no topo */
+    top: 15%; /* Alinha a primeira imagem no topo */
     left: 5%; /* Coloca a primeira imagem a 10% da largura do contêiner */
 }
 
 /* Movendo a segunda imagem */
 .hero .images img:nth-child(2) {
-    top: 20px; /* Distância do topo para a segunda imagem */
+    top: 5%; /* Distância do topo para a segunda imagem */
     left: 50%; /* Coloca a segunda imagem a 35% da largura do contêiner */
 }
 
 /* Movendo a terceira imagem */
 .hero .images img:nth-child(3) {
-    top: 390px; /* Distância do topo para a terceira imagem */
+    top: 68%; /* Distância do topo para a terceira imagem */
     left: 50%; /* Coloca a terceira imagem a 60% da largura do contêiner */
 }
 
-.icon-aviao {
+.text-content .icon-aviao {
     position: absolute;
-    width: 350px; /* Ajuste o tamanho do avião */
+    width: 50%;
+    max-width: 400px; /* Ajuste o tamanho do avião */
     top:85%;
-    left: 32%; /* Ajuste para mover mais para a direita */
+    left:32%; /* Ajuste para mover mais para a direita */
+    z-index: -1;
     transform: translate(-50%, -50%);
-    transform: rotate(2deg); /* Inclina o avião se quiser um efeito dinâmico */
+    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+    box-shadow: none; /* Remove a sombra */
 }
 
-.icon-aviao2 {
+.hero .images .icon-aviao2 {
     position: absolute;
-    width: 22vw; /* Ajuste o tamanho do avião */
+    width: 13%; /* Ajuste o tamanho do avião */
     max-width: 90px;
     height: auto;
-    top: 4%; /* Ajuste a altura (mais para cima ou para baixo) */
-    left: 66%; /* Ajuste para mover mais para a direita */
+    top: 2%; /* Ajuste a altura (mais para cima ou para baixo) */
+    left: 35%; /* Ajuste para mover mais para a direita */
     transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+    box-shadow: none; /* Remove a sombra */
+}
+/* Movendo o primeiro selo */
+.hero .images .sello {
+    position: absolute;
+    width: 15%; /* Ajuste o tamanho para garantir boa visualização */
+    max-width: 200px;
+    height: auto;
+    top: 55%;
+    left: 55%;
+    transform: translateX(-50%);
+    z-index: 5; /* Coloca o selo acima das imagens */
+    box-shadow: none; /* Remove a sombra */
 }
 
-.sello {
+/* Movendo o segundo selo */
+.hero .images .sello2 {
     position: absolute;
-    width: 100vw; /* Ajuste o tamanho do avião */
-    max-width: 120px;
+    width: 15%;
+    max-width: 200px;
     height: auto;
-    top: 45vh; /* Ajuste a altura (mais para cima ou para baixo) */
-    left: 72vw; /* Ajuste para mover mais para a direita */
-    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+    top: 0%;
+    left: 87%;
+    transform: translateX(-50%);
+    z-index: 5; /* Coloca o selo acima das imagens */
+    box-shadow: none; /* Remove a sombra */
 }
 
-.sello2 {
-    position: absolute;
-    width: 100vw; /* Ajuste o tamanho do avião */
-    max-width: 120px;
-    height: auto;
-    top: 1vh; /* Ajuste a altura (mais para cima ou para baixo) */
-    left: 86vw; /* Ajuste para mover mais para a direita */
-    transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
-}
 
 .menu-hidden {
     display: none;
@@ -349,7 +359,7 @@ header .actions .login:hover {
     height: 100%;
     object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformarse */
     object-position: center center; /* Ajusta la posición del recorte */
-    transition: trsanform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 .carousel .images .image-container:hover img {
     transform: scale(1.05);
@@ -484,7 +494,6 @@ header .actions .login:hover {
         display: none;
     }
 
-
 /* Responsividade celular */
 @media (max-width: 768px) {
     header {
@@ -540,10 +549,12 @@ header .actions .login:hover {
 
     .hero .text-content h1 {
         font-size: 2rem; /* Ajusta o tamanho da fonte para telas pequenas */
+        font-family:Arial Black ;
     }
 
     .hero .text-content span {
         font-size: 2.5rem; /* Ajusta o tamanho da fonte para telas pequenas */
+        font-family:Arial Black ;
     }
 
     .hero .text-content p {
@@ -609,25 +620,31 @@ header .actions .login:hover {
         display: none;
     }
     
-    .sello {
+    .hero .images .sello {
         position: absolute;
-        width: 60vw; /* Ajuste o tamanho do avião */
-        max-width: 60px;
+        width: 20%; /* Ajuste o tamanho para garantir boa visualização */
+        max-width: 200px;
         height: auto;
-        top: 69%; /* Ajuste a altura (mais para cima ou para baixo) */
-        left: 50vw; /* Ajuste para mover mais para a direita */
-        transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+        top: 50%;
+        left: 60%;
+        transform: translateX(-50%);
+        z-index: 5; /* Coloca o selo acima das imagens */
+        box-shadow: none; /* Remove a sombra */
     }
     
-    .sello2 {
+    /* Movendo o segundo selo */
+    .hero .images .sello2 {
         position: absolute;
-        width: 60vw; /* Ajuste o tamanho do avião */
-        max-width: 60px;
+        width: 20%;
+        max-width: 200px;
         height: auto;
-        top: 47%; /* Ajuste a altura (mais para cima ou para baixo) */
-        left: 84vw; /* Ajuste para mover mais para a direita */
-        transform: rotate(0deg); /* Inclina o avião se quiser um efeito dinâmico */
+        top: -5%;
+        left: 90%;
+        transform: translateX(-50%);
+        z-index: 5; /* Coloca o selo acima das imagens */
+        box-shadow: none; /* Remove a sombra */
     }
+
 
     .section2 .destino h1 {
         font-size: 2rem; /* Reduz o tamanho da fonte para telas menores */
@@ -649,6 +666,33 @@ header .actions .login:hover {
         max-width: 200px;
         text-align: center;
     }
+    .section2 {
+        padding: 0% 0%; /* Ajusta o padding para telas pequenas */
+        text-align: center; /* Centraliza o título e menu em telas pequenas */
+    }
+
+    .section2 .destino h1 {
+        font-size: 2.5rem; /* Reduz o tamanho do título */
+        margin-bottom: 10px; /* Ajusta o espaçamento abaixo do título */
+    }
+
+    .section2 nav {
+        padding: 10px 0; /* Ajuste do padding para telas pequenas */
+    }
+
+    .section2 nav ul {
+        justify-content: center; /* Alinha os itens no centro */
+    }
+
+    .section2 nav ul li {
+        margin: 0 10px; /* Mantém a mesma margem entre os itens */
+    }
+
+    .section2 nav ul li a {
+        font-size: 1.1rem; /* Ajusta o tamanho da fonte dos links */
+    }
+}
+
     .ebook-image{
         display: none;
     }

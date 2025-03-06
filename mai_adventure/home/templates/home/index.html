@@ -57,7 +57,7 @@
         </ul>
     </nav>
     <main>
-        <section class="hero" style="background-image: url('{% static "home/images/mapa.png" %}');">
+        <section class="hero" style="background-image: url('{% static "home/images/Pagina_inicial/mapa.png" %}');">
             <div class="text-content">
                 <h1>DISCOVER AUTHENTIC AND <br>
                     <span>UNIQUE</span><br> 
@@ -66,17 +66,17 @@
                     Recorré el mundo buscando esos rincones que pocos conocen. Experiencias auténticas, paisajes que te dejan sin palabras y momentos que valen más que cualquier souvenir. Acá priorizarmos lo real, lo diferente y lo que te hace sentir parte del lugar, no solo un turista más.
                 </p>
                 <button class="cta">JOIN THE ADVENTURE</button>
+                <img src="{% static 'home/images/Pagina_inicial/avioncito.png' %}" alt="Ícone de avião" class="icon-aviao">
             </div>
-            <img src="{% static 'home/images/Pagina_inicial/avioncito.png' %}" alt="Ícone de avião" class="icon-aviao">
             <div class="images">
                 <img src="{% static 'home/images/Pagina_inicial/imagen1home.png' %}"  alt="Paisaje 1">
                 <img src="{% static 'home/images/Pagina_inicial/imagen2home.png' %}"  alt="Paisaje 2">
-                <img src="{% static 'home/images/Pagina_inicial/imagen3home.png' %}"  alt="Paisaje 3">  
+                <img src="{% static 'home/images/Pagina_inicial/imagen3home.png' %}"  alt="Paisaje 3">
+                <img src="{% static 'home/images/Pagina_inicial/sello.png' %}"  alt="sello" class="sello">
+                <img src="{% static 'home/images/Pagina_inicial/sello2.png' %}"  alt="sello2" class="sello2">
+                <img src="{% static 'home/images/Pagina_inicial/avioncito2.png' %}"  alt="icon-aviao2" class="icon-aviao2">   
             </div>
             <button class="cta1">JOIN THE ADVENTURE</button>
-            <img src="{% static 'home/images/Pagina_inicial/avioncito2.png' %}"  alt="icon-aviao2" class="icon-aviao2">
-            <img src="{% static 'home/images/Pagina_inicial/sello.png' %}"  alt="sello" class="sello">
-            <img src="{% static 'home/images/Pagina_inicial/sello2.png' %}"  alt="sello2" class="sello2"> 
         </section>
     </main>
     <!-- Parte: destino/carousel -->
@@ -182,6 +182,123 @@
         </div>
        </div>
 
+   <!-- parte: Noticia-->
+   <div class="max-w-7xl mx-auto p-4">
+     <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold" style="font-family: 'Arial Black', sans-serif">
+      IRLANDA EN DETALLE
+     </h1>
+     <p class="text-lg">
+      Consejos, anécdotas y datos para entender la vida en la isla
+     </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     <div class="md:col-span-2">
+      <div class="relative">
+       <img alt="Persona con sombrero de fiesta navideña mirando un cracker navideño" class="w-full md:w-[900px] md:h-[450px] h-auto object-cover mx-auto" src="https://storage.googleapis.com/a1aa/image/-8d1HC20W2O7SnhUx_ZnHe3fvcZwtr5coISpQpI53eA.jpg" />
+       <div class="absolute bottom-0 left-0 bg-black bg-opacity-50 text-white p-4">
+        <h2 class="text-4xl font-bold">
+         CRACKER NAVIDEÑO
+        </h2>
+        <p class="text-sm">
+         Leer noticia completa
+        </p>
+       </div>
+      </div>
+      <p class="mt-2 text-lg font-bold">
+       Cracker Navideño: El invento que no me terminó de convencer
+      </p>
+     </div>
+     <div class="space-y-4">
+      <div class="flex">
+       <img alt="Portada de Sláinte" class="w-24 h-24 object-cover" height="100" src="https://storage.googleapis.com/a1aa/image/B87vwSuh5H3INtlzmLc2ZBCWh-sw9IEIadbWzNs3bMI.jpg" width="100"/>
+       <div class="ml-4">
+        <h3 class="text-lg font-bold">
+         Sláinte: Lo único que necesitaba saber en irlandés para llegar a Irlanda
+        </h3>
+        <a class="text-blue-600" href="#">
+         Leer noticia completa
+        </a>
+       </div>
+      </div>
+      <div class="flex">
+       <img alt="Portada de código postal irlandés" class="w-24 h-24 object-cover" height="100" src="https://storage.googleapis.com/a1aa/image/evbg9yPZbp05wRZ5F1fj_0HaYU7WFHkxRVwc44yTryM.jpg" width="100"/>
+       <div class="ml-4">
+        <h3 class="text-lg font-bold">
+         El código postal irlandés: ¡Directo a la puerta de tu casa!
+        </h3>
+        <a class="text-blue-600" href="#">
+         Leer noticia completa
+        </a>
+       </div>
+      </div>
+      <div class="flex">
+       <img alt="Portada de Phoenix Park" class="w-24 h-24 object-cover" height="100" src="https://storage.googleapis.com/a1aa/image/dXi9JlpC6XrGlyitCQzJ5BWcpa2qpwyBj79J3Nhh5T8.jpg" width="100"/>
+       <div class="ml-4">
+        <h3 class="text-lg font-bold">
+         Un día en Phoenix Park: Naturaleza y venados en pleno Dublín
+        </h3>
+        <a class="text-blue-600" href="#">
+         Leer noticia completa
+        </a>
+       </div>
+      </div>
+      <div class="flex">
+       <img alt="Portada de Elf on the Shelf" class="w-24 h-24 object-cover" height="100" src="https://storage.googleapis.com/a1aa/image/whv_JZTZQe3kxbU-zsGRUBenxEfWnaYVKfSLiQt3Oa4.jpg" width="100"/>
+       <div class="ml-4">
+        <h3 class="text-lg font-bold">
+         Elf on the Shelf: La tradición navideña más traviesa de Irlanda
+        </h3>
+        <a class="text-blue-600" href="#">
+         Leer noticia completa
+        </a>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+
+<!-- parte: About me-->
+<div class="max-w-7xl mx-auto p-6 rounded-lg ">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+     <div class="hidden md:grid grid-cols-3 gap-2 mt-6">
+      <img alt="Person rowing a boat in a snowy landscape" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Iguazu.jpg' %}" width="300"/>
+      <img alt="Person standing in front of a famous bridge" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Irlanda.jpg' %}" width="300"/>
+      <img alt="Person sitting on a ledge overlooking a city at sunset" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Lisboa.jpg' %}" width="300"/>
+      <img alt="Person looking at a decorated building" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Marruecos.jpg' %}" width="300"/>
+      <img alt="Person looking at the Eiffel Tower at night" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/paris.jpg' %}" width="300"/>
+      <img alt="Person enjoying a drink with a scenic view" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Suiza.jpg' %}" width="300"/>
+     </div>
+     <div class="flex flex-col justify-center">
+      <h1 class="text-4xl font-bold text-gray-900">
+       HOLA, SOY
+       <span class="text-orange-500">
+        MAI
+       </span>
+      </h1>
+        <div class="grid grid-cols-3 gap-2 md:hidden">
+         <img alt="Person rowing a boat in a snowy landscape" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Iguazu.jpg' %}" width="300"/>
+         <img alt="Person standing in front of a famous bridge" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Irlanda.jpg' %}" width="300"/>
+         <img alt="Person sitting on a ledge overlooking a city at sunset" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Lisboa.jpg' %}" width="300"/>
+         <img alt="Person looking at a decorated building" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Marruecos.jpg' %}" width="300"/>
+         <img alt="Person looking at the Eiffel Tower at night" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/paris.jpg' %}" width="300"/>
+         <img alt="Person enjoying a drink with a scenic view" class="w-full h-full object-cover rounded-lg" height="300" src="{% static 'home/images/Sou_mai/Suiza.jpg' %}" width="300"/>
+        </div>
+      <h2 class="text-2xl font-semibold text-gray-700 mt-2">
+       Creadora de contenido
+      </h2>
+      <p class="text-gray-600 mt-1">
+       Arquitecta, profesora de creche, influencer, hija menor.
+      </p>
+      <p class="text-gray-700 mt-4">
+       Desde que emprendí mi primera gran aventura, no paré de buscar esos rincones especiales que hacen que cada destino se sienta único. Esta página nació de esa necesidad de compartir experiencias reales, paisajes inolvidables y momentos que van más allá de las postales. Acá vas a encontrar relatos y recomendaciones de diferentes partes del mundo. Porque para mí, cada viaje es una oportunidad de conectar, aprender y crear recuerdos que duran toda la vida.
+      </p>
+      <div class="flex justify-center">
+        <button class="mt-6 px-6 py-3 bg-[#8a9a5b] text-white font-semibold rounded-lg shadow-md hover:bg-[#7a8a4b] transition-colors duration-300">
+          MÁS SOBRE MI
+        </button>
+      </div>
+     </div>
+    </div>
+   </div>
     <script src="{% static 'home/script.js' %}"></script>
 </body>
 </html>
