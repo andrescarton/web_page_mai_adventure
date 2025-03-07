@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-=x6wgnra5cy*%(m-0vj0bnm^h2$jx4!g!j^lz#ys(i3ukrq(d+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["andrekim47.pythonanywhere.com"]
+#ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -37,8 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'tailwind',
+    'core',
     'home',
 ]
+
+TAILWIND_APP_NAME = 'core'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,7 +82,11 @@ WSGI_APPLICATION = 'mai_adventure.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME':'andrekim47$default',
+        'USER':'andrekim47',
+        'PASSWORD': 'skusledradis47',
+        'HOST':'andrekim47.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
     }
 }
 
