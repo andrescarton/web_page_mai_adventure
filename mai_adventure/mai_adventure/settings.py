@@ -136,8 +136,7 @@ STATIC_URL = '/static/'
 
 # Diretório onde os arquivos serão armazenados após rodar 'collectstatic' (para produção)
 #STATIC_ROOT = BASE_DIR / "staticfiles"
-STATIC_ROOT = "/home/andrekim47/web_page_mai_adventure/mai_adventure/staticfiles"
-
+STATIC_ROOT = "/home/andrekim47/web_page_mai_adventure/mai_adventure/home/static/home"
 
 
 # Default primary key field type
