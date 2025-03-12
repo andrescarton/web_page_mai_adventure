@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-=x6wgnra5cy*%(m-0vj0bnm^h2$jx4!g!j^lz#ys(i3ukrq(d+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["andrekim47.pythonanywhere.com"]
-#ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = ["andrekim47.pythonanywhere.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,12 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tailwind',
-    'core',
     'home',
 ]
-
-TAILWIND_APP_NAME = 'core'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -129,10 +125,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Diretórios onde o Django deve buscar arquivos estáticos durante o desenvolvimento
-#STATICFILES_DIRS = [
-#    BASE_DIR / "static",  # Diretório estático global (fora dos apps)
-#    BASE_DIR / "home" / "static",  # Diretório estático específico do app 'home'
-#]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "home/static"),  # Adiciona a pasta correta
+]
 
 # Diretório onde os arquivos serão armazenados após rodar 'collectstatic' (para produção)
 #STATIC_ROOT = BASE_DIR / "staticfiles"
